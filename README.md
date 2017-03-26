@@ -9,7 +9,7 @@
 
 <br/>
 
-My theme ;)
+A clean vcs aware theme with optional [asdf](https://github.com/asdf-vm/asdf) right-prompt.
 
 ## Install
 
@@ -20,14 +20,14 @@ $ omf install doughsay
 
 ## Features
 
-* Lorem ipsum dolor sit amet.
-* Consectetur adipisicing elit.
+* vcs aware (git, mercurial, svn)
+* [asdf](https://github.com/asdf-vm/asdf) aware (optionally display current tool versions in right-prompt)
 
 
 ## Screenshot
 
 <p align="center">
-<img src="{{SCREENSHOT_URL}}">
+  <img src="./screenshot.png">
 </p>
 
 
@@ -37,8 +37,8 @@ $ omf install doughsay
 
 
 [mit]:            https://opensource.org/licenses/MIT
-[author]:         https://github.com/{{USER}}
-[contributors]:   https://github.com/{{USER}}/theme-doughsay/graphs/contributors
+[author]:         https://github.com/doughsay
+[contributors]:   https://github.com/doughsay/omf-theme-doughsay/graphs/contributors
 [omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
