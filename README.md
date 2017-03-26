@@ -24,10 +24,28 @@ $ omf install doughsay
 * [asdf](https://github.com/asdf-vm/asdf) aware (optionally display current tool versions in right-prompt)
 
 
-## Screenshot
+## Screenshots
+
+Showing git repository statuses:
 
 <p align="center">
-  <img src="./screenshot.png">
+  <img src="./screenshot1.png">
+</p>
+
+Showing [asdf](https://github.com/asdf-vm/asdf) tool versions in the right-prompt:
+
+> set -g theme_display_asdf "yes"
+
+<p align="center">
+  <img src="./screenshot2.png">
+</p>
+
+Showing user@hostname when logged into a remote machine:
+
+> set -g theme_display_user "yes"
+
+<p align="center">
+  <img src="./screenshot3.png">
 </p>
 
 
