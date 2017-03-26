@@ -9,6 +9,7 @@
 
 <br/>
 
+My theme ;)
 
 ## Install
 

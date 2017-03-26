@@ -1,3 +1,1 @@
-function fish_greeting
-  echo "what?"
-end
+function fish_greeting; end
