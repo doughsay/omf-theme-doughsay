@@ -111,21 +111,3 @@ function __doughsay_dirname
     echo -n $dname
   end
 end
-
-# black
-# red
-# green
-# yellow
-# blue
-# magenta
-# cyan
-# white
-# brblack
-# brred
-# brgreen
-# bryellow
-# brblue
-# brmagenta
-# brcyan
-# brwhite
-# normal
