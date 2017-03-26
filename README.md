@@ -36,6 +36,8 @@ Showing [asdf](https://github.com/asdf-vm/asdf) tool versions in the right-promp
 
 > set -g theme_display_asdf "yes"
 
+> NOTE: this requires installing the [asdf plugin](https://github.com/doughsay/omf-asdf) in oh-my-fish: `omf install asdf`
+
 <p align="center">
   <img src="./screenshot2.png">
 </p>
