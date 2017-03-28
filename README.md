@@ -24,6 +24,19 @@ $ omf install doughsay
 * [asdf](https://github.com/asdf-vm/asdf) aware (optionally display current tool versions in right-prompt)
 
 
+## Configuration
+
+The best place to put these is in your `$OMF_CONFIG/init.fish` (usually `~/.config/omf/init.fish`).  Set them by adding a line to that file like this:
+
+```
+set -g theme_display_asdf "yes"
+```
+
+* `theme_display_asdf` - set to "yes" to display asdf tool versions in right prompt
+* `theme_display_user` - set to "yes" to show username and hostname in prompt
+* `theme_hood_ornament` - set to whatever you want to show up at the end of your prompt (defaults to "λ")
+
+
 ## Screenshots
 
 Showing git repository statuses:

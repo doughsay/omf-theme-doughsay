@@ -102,7 +102,9 @@ function __doughsay_prompt -a last_status
     set_color brwhite
   end
 
-  echo -n "λ "
+  set -q theme_hood_ornament; or set theme_hood_ornament "λ"
+
+  echo -n "$theme_hood_ornament "
 end
 
 function __doughsay_dirname
