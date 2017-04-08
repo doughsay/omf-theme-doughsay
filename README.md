@@ -36,6 +36,16 @@ set -g theme_display_asdf "yes"
 * `theme_display_user` - set to "yes" to show username and hostname in prompt
 * `theme_hood_ornament` - set to whatever you want to show up at the end of your prompt (defaults to "λ")
 
+You can also configure the VCS symbols used in the prompt:
+
+* `theme_vcs_symbol_ahead` - (defaults to "+")
+* `theme_vcs_symbol_behind` - (defaults to "-")
+* `theme_vcs_symbol_diverged` - (defaults to "±")
+* `theme_vcs_symbol_touched` - (defaults to "…")
+* `theme_vcs_symbol_dirty` - (defaults to "○")
+* `theme_vcs_symbol_staged` - (defaults to "●")
+* `theme_vcs_symbol_dirty_staged` - (defaults to "◒")
+
 
 ## Screenshots
 

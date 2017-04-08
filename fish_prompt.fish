@@ -72,13 +72,17 @@ function __doughsay_vcs_branch -a state touched branch
     set_color green
   end
 
+  set -q theme_vcs_symbol_ahead; or set -l theme_vcs_symbol_ahead "+"
+  set -q theme_vcs_symbol_behind; or set -l theme_vcs_symbol_behind "-"
+  set -q theme_vcs_symbol_diverged; or set -l theme_vcs_symbol_diverged "±"
+
   switch "$state"
     case "ahead"
-      set s "+"
+      set s "$theme_vcs_symbol_ahead"
     case "behind"
-      set s "-"
+      set s "$theme_vcs_symbol_behind"
     case "diverged"
-      set s "±"
+      set s "$theme_vcs_symbol_diverged"
     case "detached"
       set_color red
   end
@@ -87,16 +91,21 @@ function __doughsay_vcs_branch -a state touched branch
 end
 
 function __doughsay_vcs_statuses -a touched dirty staged
+  set -q theme_vcs_symbol_touched; or set -l theme_vcs_symbol_touched "…"
+  set -q theme_vcs_symbol_dirty; or set -l theme_vcs_symbol_dirty "○"
+  set -q theme_vcs_symbol_staged; or set -l theme_vcs_symbol_staged "●"
+  set -q theme_vcs_symbol_dirty_staged; or set -l theme_vcs_symbol_dirty_staged "◒"
+
   if [ $touched = "yes" ]; and [ $dirty = "no" ]; and [ $staged = "no" ]
-    echo -n "…"
+    echo -n "$theme_vcs_symbol_touched"
   end
 
-  if [ $dirty = "yes" ]
-    echo -n "○"
-  end
-
-  if [ $staged = "yes" ]
-    echo -n "●"
+  if [ $dirty = "yes" ]; [ $staged = "yes" ]
+    echo -n "$theme_vcs_symbol_dirty_staged"
+  else if [ $dirty = "yes" ]
+    echo -n "$theme_vcs_symbol_dirty"
+  else if [ $staged = "yes" ]
+    echo -n "$theme_vcs_symbol_staged"
   end
 end
 
