@@ -41,6 +41,7 @@ You can also configure the VCS symbols used in the prompt:
 * `theme_vcs_symbol_ahead` - (defaults to "+")
 * `theme_vcs_symbol_behind` - (defaults to "-")
 * `theme_vcs_symbol_diverged` - (defaults to "±")
+* `theme_vcs_symbol_local` - (defaults to "\*")
 * `theme_vcs_symbol_touched` - (defaults to "…")
 * `theme_vcs_symbol_dirty` - (defaults to "○")
 * `theme_vcs_symbol_staged` - (defaults to "●")
