@@ -97,7 +97,7 @@ function __doughsay_vcs_statuses -a touched dirty staged
   set -q theme_vcs_symbol_touched; or set -l theme_vcs_symbol_touched "…"
   set -q theme_vcs_symbol_dirty; or set -l theme_vcs_symbol_dirty "○"
   set -q theme_vcs_symbol_staged; or set -l theme_vcs_symbol_staged "●"
-  set -q theme_vcs_symbol_dirty_staged; or set -l theme_vcs_symbol_dirty_staged "◒"
+  set -q theme_vcs_symbol_dirty_staged; or set -l theme_vcs_symbol_dirty_staged "◉"
 
   if [ $touched = "yes" ]; and [ $dirty = "no" ]; and [ $staged = "no" ]
     echo -n "$theme_vcs_symbol_touched"
